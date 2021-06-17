@@ -1,0 +1,113 @@
+﻿@layout SimpleLayout
+@page "/account/login"
+  
+    
+<section class="section-conten padding-y bg login-layout-full">
+<!--<div class="auth-wrapper">
+<div class="auth-content container">
+	<div class="card">
+        <div class="row align-items-center">
+                <div class="col-md-6 col-xl-3">
+                <div class="card bg-c-blue order-card">
+                    <div class="card-body">
+                        <h6 class="text-white">Orders Received</h6>
+                        <h2 class="text-right text-white"><i class="feather icon-shopping-cart float-left"></i><span>486</span></h2>
+                        <p class="m-b-0">Completed Orders<span class="float-right">351</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card bg-c-green order-card">
+                    <div class="card-body">
+                        <h6 class="text-white">Total Sales</h6>
+                        <h2 class="text-right text-white"><i class="feather icon-tag float-left"></i><span>1641</span></h2>
+                        <p class="m-b-0">This Month<span class="float-right">213</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card bg-c-yellow order-card">
+                    <div class="card-body">
+                        <h6 class="text-white">Revenue</h6>
+                        <h2 class="text-right text-white"><i class="feather icon-repeat float-left"></i><span>$42,562</span></h2>
+                        <p class="m-b-0">This Month<span class="float-right">$5,032</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card bg-c-red order-card">
+                    <div class="card-body">
+                        <h6 class="text-white">Total Profit</h6>
+                        <h2 class="text-right text-white"><i class="feather icon-award float-left"></i><span>$9,562</span></h2>
+                        <p class="m-b-0">This Month<span class="float-right">$542</span></p>
+                    </div>
+                </div>
+            </div>
+      
+         </div><br />
+
+         
+
+		<div class="row align-items-center">
+		<div class="col-md-6">-->
+    <div class="card mx-auto" style="max-width: 380px; margin-top:100px;">
+        <div class="card-body">
+            
+             <div class="card bg-c-blue order-card">
+                    <div class="card-body align-items-center">
+                        <h6 class="text-white">تسجيل الدخول</h6>
+                        
+                    </div>
+                </div>
+                <br />
+            <EditForm Model="model" OnValidSubmit="SubmitAsync">
+
+                <ErrorsList ShowErrors="ShowErrors" Errors="Errors" />
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fa fa-envelope"></i>
+                            </span>
+                        </div>
+                        <InputText @bind-Value="model.Email" class="form-control" placeholder="Email" type="email" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                        </div>
+                        <InputText @bind-Value="model.Password" class="form-control" placeholder="Password" type="password" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <a href="#" class="float-left">Forgot password?</a>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block"> Login  </button>
+                </div>
+            </EditForm>
+        </div>
+        <br />
+        
+        <p class="text-center mt-4">لا تملك حساب قم بالتسجيل الان? <a href="/account/register">Create one now</a></p>
+        <br />
+        <br />
+    </div>
+
+   <!-- </div>-->
+   <!-- <div class="col-md-6 d-none d-md-block">
+					<img src="../assets/images/auth-bg.jpg" alt="" class="img-fluid">
+				</div>
+   
+</div>
+</div>
+</div>
+</div>-->
+    
+
+</section>
